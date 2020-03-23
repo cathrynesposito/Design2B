@@ -1,0 +1,74 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+li {
+    float: center;
+    text-align: center;
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 90px;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+li a:hover {
+    background-color: indianred;
+    color: ivory;
+}
+
+h1 {
+    background-color: black;
+    background-size: cover;
+    color: white;
+    margin: 0px;
+    padding: 12px 12px;
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 70px;
+    margin-left: 0;
+}
+
+h2 {
+    color: ghostwhite;
+    width: 250px;
+    display: inline;
+    font-family: monospace;
+    font-size: 15px;
+    height: 200px;
+    text-align: center;
+    max-width: content;
+    margin-left: 50%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    max-width: inherit;
+
+}
+
+
+
+div {
+    text-align: center;
+    justify-content: space-around;
+    float: center;
+    width: window;
+    overflow: auto;
+}
