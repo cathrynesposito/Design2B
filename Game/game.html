@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+
+</head>
+<style>
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+</style>
+
+<body>
+    <script>
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background (0);
+}
+
+function draw() {
+  let x=1000;
+  //stroke(700, random(500), 35, random(80));
+  
+}
+
+function mouseDragged() {
+  stroke(1000, 1000, 1000, random(100));
+  line(mouseX, random(height), mouseY, width);
+  noStroke();
+  fill(random(300), random(100), random(100), 150);
+  circle(mouseX, mouseY, random(35));
+  return false;
+}
+
+function keyPressed() {
+  if (keyCode === BACKSPACE) {
+    createCanvas(windowWidth, windowHeight);
+    background(random(100), random(100), random(100), random(50, 100));
+  }
+}
+
+    </script>
+</body></html>
