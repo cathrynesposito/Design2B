@@ -1,87 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Catie Esposito</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Delius&amp;display=swap" rel="stylesheet">
-
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
-    <script src="sketch.js"></script>
-
-</head><body>0
-
-<style>
-    canvas {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
-</style>
-
-
-    <h1>Catie Esposito</h1>
-    <script>
-        function setup() {
-            createCanvas(windowWidth, windowHeight);
-            background(0);
-
-        }
-
-        function draw() {
-            let d = day();
-            let h = hour();
-            let min = minute();
-            let s = second();
-            let ms = millis();
-            let m = month();
-            let y = year();
-
-            if (s > 58) {
-                fill(0);
-                rect(0, 0, width, height);
-            } else {
-                noStroke();
-                fill(200, 20, 600, 20);
-                rect(random(width), random(height), y, m)
-                noStroke();
-                fill(random(300), random(200), 64, 100)
-                circle(random(ms), random(width), s * 2)
-                stroke(100);
-                circle(random(ms), random(width), d)
-                stroke(200);
-                circle(random(ms), random(width), min)
-                stroke(random(800), 78, 34, 45)
-                line(mouseX, mouseY, y, d)
-                stroke(random(100), 324, 684, 35)
-                line(mouseX, mouseY, m, 1000);
-                noStroke();
-                square(random(ms), random(width), h);
-            }
-        }
-
-        function mouseDragged() {
-            line(mouseX, mouseY, height, width);
-            stroke(random(300), random(200), 64, 100)
-            return false;
-        }
-    </script>
-    <div>
-        <ul>
-            <li><a href="q+a/questions.html">About</a></li>
-            <li><a href="manfesto/manifesto.html">Manifesto</a></li>
-            <li><a href="css-painting/painting.html">Block Painting</a>
-            </li><li><a href="http://www.ericgoldberg.net/printmaking">Favorite Artist</a></li>
-            <li><a href="poem/poem.html">Poem</a></li>
-            <li><a href="portfolio/portfolio.html">Portfolio</a></li>
-            <li><a href="Game/game.html">Game</a></li>
-        </ul>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+</head>
+<body>    
+<div class="navbar">
+  <h1>Catie Esposito</h1>  
+  
+  <a href="/manfesto/manifesto.html">Manifesto</a>
+  <div class="dropdown">
+    <button class="dropbtn">Portfolio 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/portfolio/design.html">Design</a>
+      <a href="portfolio/print.html">Print</a>
+      <a href="/portfolio/photography.html">Photography</a>
     </div>
-
-
-<canvas id="defaultCanvas0" class="p5Canvas" width="1414" height="1396" style="width: 707px; height: 698px;"></canvas></body></html>
+  </div> 
+     <div class="dropdown">
+    <button class="dropbtn">Class Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="poem/poem.html">Poem</a>
+      <a href="clock/clock.html">Clock</a>
+      <a href="/Game/game.html">Game</a>
+    </div>
+  </div> 
+    <a href="index.html">Home</a>
+</div>
+</body>
+</html>
