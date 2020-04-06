@@ -2,6 +2,9 @@ body {
     margin: 0;
     font-family: 'Gotu', sans-serif;
     font-size:20px;
+    margin:0;
+    background-size: cover;
+    background-color: black;
 }
 
 html {
@@ -16,14 +19,14 @@ html {
 }
 
 #lineOne {
-    color: maroon;
+    color: indianred;
     font-size: 25px;
     font-family: 'Martel Sans', sans-serif;
- margin: 10px;
+    margin: 10px;
 }
 
 #lineTwo {
-    font-size: 40px;
+   font-size: 40px;
     margin: 10px;
 }
 
@@ -70,12 +73,12 @@ html {
 active {
     font-family: 'Gotu', sans-serif;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 
 li {
@@ -93,8 +96,4 @@ li a {
 
 li a:hover {
     background-color: lightsalmon;
-}
-
-body {
-    margin:0;
 }
