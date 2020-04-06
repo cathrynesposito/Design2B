@@ -1,13 +1,10 @@
 body {
     margin: 0;
+    font-family: 'Gotu', sans-serif;
+    font-size:20px;
 }
 
 html {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat:no-repeat;
-    background: linear-gradient( to left top, orange, red);
     color: aliceblue
 }
 
@@ -61,15 +58,18 @@ html {
 #lineSeven {
     border: 4px solid;
     padding: 10px;
-    box-shadow: 5px 10px #888888;
-    background-color: black;
+    box-shadow: 5px 10px darkslategrey;
+    background-color: grey;
     font-size: 30px;
     text-align: center;
-    color: slategray;
-    border-color: black;
+    color: darkslategrey;
+    border-color: grey;
     margin:10px;
 }
 
+active {
+    font-family: 'Gotu', sans-serif;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -92,5 +92,9 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: lightsalmon;
+}
+
+body {
+    margin:0;
 }
