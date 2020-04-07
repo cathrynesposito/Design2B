@@ -5,13 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bad+Script|Delius&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Gotu&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="sketch.js"></script>
-
-
+    <li><a class="active" href="/index.html">Home</a></li> 
 </head>
 <style>
     canvas {
@@ -25,6 +22,34 @@
 </style>
 
 <body>
+    
+<style> 
+    body {
+        margin:0px;
+        margin-top:-15px;    
+    }
+ li a {
+    display: block;
+    margin:0px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:20px;
+    font-family: 'Gotu', sans-serif;
+     background-color: black;
+}
+
+li a:hover {
+    background-color: lightsalmon;
+    margin: 0px;
+}
+    li {
+    float: center;
+        margin:0px;
+}
+    
+</style>
     <script>
         function setup() {
             createCanvas(windowWidth, windowHeight);
