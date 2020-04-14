@@ -24,29 +24,74 @@
     
 <script>
 let mySteps = [762, 1339, 1850, 6696, 1411, 2809, 7208, 2546, 5830, 5612, 1370, 999, 968, 654, 1967, 397, 1238, 1406, 816, 1788, 1267, 457, 152];
+
+let myPhotos = [261];
+
+class Brick{
+  constructor(bc, y){
+    this.brickColor = bc;
+    this.yPos = y;
+    this.xPos = 0;
+  }
+
+  createBrick(){
+    fill(this.brickColor);
+    rect(this.xPos, this.yPos, 50, 50);
+  }
+
+  setSpeed(){
+    this.xSpeed = 1;
+  }
   
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  noLoop();
-  colorMode(HSB, 360, 100, 100);
+  moveBrick(){
+    this.xPos+=this.xSpeed;
+    if(this.xPos+100 >= width || this.xPos <= 0){
+      this.xSpeed*=-1;
+    }
+  }
 }
 
-  
-function draw() {
-  
-  background(30, 90, 80, 80);
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+}
 
- // print(mySteps.length);
-  for (let i = 0; i < mySteps.length; i = i + 1)
-  
-  {
-  
-   fill(i*6);
-   stroke(0);
-   translate(0, width/30);
-   mappedSteps = map(mySteps[i], 150, 7500, width/10, width-10);
-  rect(i * height / mySteps.length + height/50, 0, mySteps.length, mappedSteps);
+let brick1 = new Brick("white", 0);
+let brick2 = new Brick("white", 60);
+
+//
+brick1.setSpeed();
+brick2.setSpeed();
+
+function draw () {
+  background(0);
+  if(mouseIsPressed){
+    background(50);
   }
+  brick1.createBrick();
+  brick1.moveBrick();
+  if(!mouseIsPressed){
+    createBars();
+  }
+  brick2.createBrick();
+  brick2.moveBrick();
+}
+
+function createBars() {
+  let len = 23;
+  for(let i = 0;i<width/len;i++){
+    fill("white");
+    if(i%2 == 0)
+   fill(100, 100, 100, 100);
+   stroke(0);
+   translate(0, width/50);
+   mappedSteps = map(mySteps[i], 150, 7500, width/20, width-10);
+  rect(i * height / mySteps.length + height/50, 0, mySteps.length, mappedSteps);
+    ellipse(random(width), random(height), random(myPhotos/20));
+  }
+  textSize(40);
+  fill(255, 210, 100);
+  text('Daily Steps', 10, 20, 200, 300);
+  noStroke();
 }
 
 </script>
