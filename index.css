@@ -64,6 +64,7 @@ h1 {
   text-decoration: none;
   display: block;
   text-align: center;
+  font-size: 16px;
 }
 
 .dropdown-content a:hover {
