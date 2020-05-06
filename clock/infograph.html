@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="sketch.js">
     
@@ -17,6 +18,16 @@
     height:100%;
     z-index: -1;
     }
+             p{
+                 font-family: 'Goto', sans-serif;
+                 font-size:8px;
+                 color:white;
+                 display: center;
+                 float: center;
+                 margin: 30px;
+                 position: center;
+                 margin-left: 575px;
+             }
 </style>
 </head>
     
@@ -24,6 +35,8 @@
 <ul>
     <li><a class="active" href="https://cathrynesposito.github.io/Design2B/">Home</a></li>
     </ul> 
+    <br>
+    <p>(CLICK MOUSE)</p>
  <style>
     body{
             margin: 0;
@@ -62,18 +75,20 @@ let myPhotos = [0, 11, 10, 1, 16, 6, 1, 5, 10, 6, 23, 12, 34, 56, 12, 22, 13, 26
 
 
 function setup() {
-  createCanvas(windowHeight, windowWidth);
+  createCanvas(windowWidth, 800);
 }
 
 function draw() {
   background(0);
-  frameRate(10);
+  frameRate(15);
   if (mouseIsPressed) {
-  background(random(100), random(100), random(100));
-  textSize(20);
+  frameRate(5);
+  background(255, random(210), random(100));
+  textSize(30);
   fill(255);
   textAlign (CENTER);
-  text('Daily Steps & Pictures Taken During this Quarantine', width/2, height/100+400);
+  text('Daily Steps & Pictures Taken', width / 2, height/100+400);
+text('During this Quarantine', width / 2, height/100+450);
   noStroke();
   }
  // brick1.createBrick();
@@ -93,12 +108,13 @@ function createBars() {
       fill(100, 100, 100, 100);
     stroke(0);
     translate(0, width / 0 + 100);
-    translate(0, width / 20);
+    translate(0, width / 30);
     mappedSteps = map(mySteps[i], 0, 7500, width / 10, width - 10);
     mappedPhotos = map(myPhotos[i], 100, 7500, height, width);
     rect(i * height / mySteps.length + height / 50, 0, mySteps.length, mappedSteps);
-    fill(255, 210, 100)
-    ellipse(random(mappedPhotos), random(height/50), random(i*myPhotos.length / 10));
+    fill(255, random(210), random(100))
+    noStroke();
+    ellipse(random(mappedPhotos), random(height), random(i*myPhotos.length / 4));
   }
 }
 </script>
