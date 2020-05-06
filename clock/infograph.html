@@ -18,29 +18,28 @@
     height:100%;
     z-index: -1;
     }
-             p{
-                 font-family: 'Goto', sans-serif;
-                 font-size:8px;
-                 color:white;
-                 display: center;
-                 float: center;
-                 margin: 30px;
-                 position: center;
-                 margin-left: 575px;
-             }
 </style>
 </head>
     
 <body>
 <ul>
-    <li><a class="active" href="https://cathrynesposito.github.io/Design2B/">Home</a></li>
-    </ul> 
-    <br>
-    <p>(CLICK MOUSE)</p>
+    <li><a class="active" href="https://cathrynesposito.github.io/Design2B/">Home</a></li></ul>
+
+    <h1>Press Mouse</h1>
  <style>
+    h1 {
+        text-align: center;
+        font-size:10px;
+        font-family: 'Goto', sans-serif;
+        color: white;
+    }
+</style>  
+ 
+  <style>
     body{
             margin: 0;
             font-family: 'Gotu', sans-serif;
+        background-color: black;
         }
 ul {
   list-style-type: none;
@@ -66,6 +65,24 @@ li a:hover {
   background-color: lightsalmon;
 }
 </style>
+     <script src="sketch.js">
+    
+    </script>
+    <style>
+    canvas {
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    z-index: -1;
+    }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+</style>
     
 <script>
 let mySteps = [762, 1339, 1850, 6696, 1411, 2809, 7208, 2546, 5830, 5612, 1370, 999, 968, 654, 1967, 397, 1238, 1406, 816, 1788, 1267, 457, 152];
@@ -75,7 +92,7 @@ let myPhotos = [0, 11, 10, 1, 16, 6, 1, 5, 10, 6, 23, 12, 34, 56, 12, 22, 13, 26
 
 
 function setup() {
-  createCanvas(windowWidth, 800);
+  createCanvas(windowWidth, 950);
 }
 
 function draw() {
@@ -109,15 +126,15 @@ function createBars() {
     stroke(0);
     translate(0, width / 0 + 100);
     translate(0, width / 30);
-    mappedSteps = map(mySteps[i], 0, 7500, width / 10, width - 10);
+    mappedSteps = map(mySteps[i], 0, 7500, width / 20, width - 10);
     mappedPhotos = map(myPhotos[i], 100, 7500, height, width);
-    rect(i * height / mySteps.length + height / 50, 0, mySteps.length, mappedSteps);
+    rect(i* height / mySteps.length * 2+10, 0, mySteps.length, mappedSteps);
     fill(255, random(210), random(100))
     noStroke();
     ellipse(random(mappedPhotos), random(height), random(i*myPhotos.length / 4));
   }
 }
 </script>
-</body>
+    </body>
 
 </html>
