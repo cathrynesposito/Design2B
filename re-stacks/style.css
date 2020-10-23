@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+  color:white;
+  font-family:'Zeyada', cursive;
+  margin:20pt;
+  line-height: 1pt;
+  font-size: 20pt;
+  cursor: url("https://downloads.totallyfreecursors.com/cursor_files/musicnote1.cur"), url("https://downloads.totallyfreecursors.com/thumbnails/musicnote.gif"), auto;
+}
+
+h1 {
+  font-family:'Libre Baskerville', serif;
+  font-weight: medium;
+  color:#907a36;
+  letter-spacing: 1pt;
+  line-height:8pt;
+  text-align:left;
+  font-size:20pt;
+  display:inline;
+  border:double;
+  padding:3pt;
+  border-radius: 10pt;
+  cursor: url (http://www.rw-designer.com/cursor-extern.php?id=7446);
+ }
+
+h1:hover {
+  background-color:white;
+  color: black;
+}
+
+sng:hover {
+  color:black;
+}
+
+h2 {
+  color: white;
+  margin: 0;
+  letter-spacing:0.75pt;
+  text-align:right;
+}
+
+::selection {
+  color: black;
+  background: white;}
+  
+sng {
+  font-family:'Zeyada', cursive;
+  color: white;
+  margin:0;
+}
+
+a:hover {
+color: white;
+  animation: colorChange;
+  animation-duration: 2s;
+  cursor:crosshair;
+}
+
+a:link {
+  color:white;
+}
+
+a:visited{
+  color:beige;
+}
+
+a:active {
+color:#89876e;
+}
+
+p {
+  background-color:black;
+  margin: 5em;
+  letter-spacing:0.75pt;
+  line-height: 22pt;
+  padding: 2%;
+  border:double;
+  border-radius:50px;
+}
+
+p:hover {
+  background-color:#89876e;;
+}
+
+img {
+  position:fixed;
+  z-index: -1;
+}
+
+.video {
+  max-width: 100%;
+  max-height: 100%;
+  min-width:100px;
+  min-height:100px;
+  position: relative;
+  z-index:inherit;
+  animation: mymove 20s infinite;
+  
+}
+
+
+@keyframes mymove {
+  0%   {top: 0px; left: -80px;;}
+  66%  {top: 0px; left: 50%;}
+  100%   {top: 0px; left: -80px;}
+}
+
+
+@keyframes colorChange {
+     from {color: darkgoldenrod;}
+    to {color: #89876e;}
+}
+
