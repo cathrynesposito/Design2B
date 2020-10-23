@@ -3,8 +3,8 @@ body {
   color:white;
   font-family:'Zeyada', cursive;
   margin:20pt;
-  line-height: 1pt;
-  font-size: 20pt;
+  line-height: .5vw;
+  font-size: 2vw;
   cursor: url("https://downloads.totallyfreecursors.com/cursor_files/musicnote1.cur"), url("https://downloads.totallyfreecursors.com/thumbnails/musicnote.gif"), auto;
 }
 
@@ -15,7 +15,7 @@ h1 {
   letter-spacing: 1pt;
   line-height:8pt;
   text-align:left;
-  font-size:20pt;
+  font-size:3vw;
   display:inline;
   border:double;
   padding:3pt;
@@ -69,11 +69,13 @@ color:#89876e;
 }
 
 p {
+  width: vw;
+  height: auto;
   background-color:black;
   margin: 5em;
   letter-spacing:0.75pt;
   line-height: 22pt;
-  padding: 2%;
+  padding: 2% 2%;
   border:double;
   border-radius:50px;
 }
