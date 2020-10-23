@@ -77,7 +77,7 @@ p {
   line-height: 22pt;
   padding: 2% 2%;
   border:double;
-  border-radius:50px;
+  border-radius:5vw;
 }
 
 p:hover {
