@@ -74,10 +74,10 @@ p {
   background-color:black;
   margin: 5em;
   letter-spacing:0.75pt;
-  line-height: 22pt;
+  line-height: 4vw;
   padding: 2% 2%;
   border:double;
-  border-radius:5vw;
+  border-radius:2vw;
 }
 
 p:hover {
