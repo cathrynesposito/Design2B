@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 15pt;
+    color:white;
+} 
+
+.back {
+    position: fixed;
+    z-index: -4;
+}
+
+.header {
+    margin-top:-20px;
+    margin-bottom:-10px;
+    padding: 0;
+    background-color: black;
+    width: 100%;
+    height: 62px;
+}
+
+p2 {
+    width: 50%;
+    display: inline-block;
+    float:right;
+    margin-top: -300pt;
+    padding: 20px;
+}
+p {
+    width: 50%;
+    display: inline-block;
+    float:right;
+    margin-top: -350pt;
+    font-size: 25pt;
+    margin-left: -50pt;
+    padding: 20px;
+}
+
+.shape {
+    margin-top: 100pt;
+    width: auto;
+    height:400pt;
+    display: inline-block;
+}
+h1 {
+    text-align: left;
+    padding-left: .5em;
+    margin-top:10px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-variant-caps: all-petite-caps;
+    letter-spacing: .2em;
+    float: left;}
+}  
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+  float:right;
+}
+
+
+li {
+  float: right;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-variant-caps: all-petite-caps;
+  letter-spacing: .2em;
+  font-size: 15pt;
+}
+
+li a:hover {
+  background-color: goldenrod;
+  margin: auto;
+}
+
+div.gallery {
+  border: 0px solid #ccc;
+  width: inherit;
+  height: inherit;
+  filter: invert(100%);
+}
+
+div.gallery:hover {
+  border: 0px solid #777;
+  filter: contrast(115%);
+  filter: brightness(120%)
+}
+
+div.gallery img {
+  width: 200px;
+  height: inherit;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive { 
+  padding: 10px;
+  width: 100%;
+  float: left;
+  display: grid;
+}
+
+@media only screen and (max-width: 200px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+
+@media only screen and (max-width: 200px) {
+  .responsive {
+    width: 50%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: inline-block;
+  clear: both;
+}
+
