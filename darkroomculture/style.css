@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 100;
-    font-size: 15pt;
+    letter-spacing:1px;
+    font-size: 12pt;
     color:white;
 } 
 
@@ -18,38 +19,76 @@ body{
     background-color: black;
     width: 100%;
     height: 62px;
+    font-style: italic;
 }
 
-p2 {
-    width: 50%;
-    display: inline-block;
-    float:right;
-    margin-top: -300pt;
-    padding: 20px;
+h2{
+text-align: center;
+text-justify:inherit;
+font-family: "Nunito", sans-serif;
+    font-weight: 100;
+    letter-spacing:1px;
+    font-size: 24pt;
+font-variant-caps: all-petite-caps;
+
 }
+.textbox{
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; 
+    padding: 10px;
+    width: 100%;
+    height:500px;
+    position: inherit; 
+}
+
+
 p {
-    width: 50%;
-    display: inline-block;
-    float:right;
-    margin-top: -350pt;
     font-size: 25pt;
-    margin-left: -50pt;
-    padding: 20px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    letter-spacing: 9px;
 }
+
+
 
 .shape {
-    margin-top: 100pt;
-    width: auto;
-    height:400pt;
-    display: inline-block;
+    padding: 50px;
+    width: 80%;
+    height:auto;
+    margin-left: 20px;
+    justify-content: right;
+    position: relative;
+    z-index: -1;
+    
 }
+
+.container:hover {
+    filter: contrast(115%);
+    
+}
+
+.container {
+    display:inline-flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: left;
+    width:100%;
+    height:40%;
+    margin: 0;
+    padding: 0;
+   filter: grayscale(100%)
+}
+
+
 h1 {
     text-align: left;
     padding-left: .5em;
     margin-top:10px;
     font-size: 30px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-variant-caps: all-petite-caps;
     letter-spacing: .2em;
     float: left;}
@@ -62,6 +101,7 @@ ul {
   overflow: hidden;
   display: inline-block;
   float:right;
+  text-decoration: none;
  
 }
 
@@ -79,10 +119,11 @@ ul {
   text-decoration: none;
   background-color: black;
   border: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-variant-caps: all-petite-caps;
   letter-spacing: .2em;
   font-size: 15pt;
+  font-style: italic;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
@@ -109,7 +150,7 @@ ul {
   display: block;
   text-align: center;
   font-size: 12px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
  font-weight: 600;
 }
 
@@ -124,6 +165,9 @@ ul {
 
 li {
   float: right;
+  list-style: none;
+  text-decoration: none;
+  border:none;
 }
 
 li a {
@@ -142,66 +186,20 @@ li a:hover {
   margin: auto;
 }
  
-.container {
-    display: inline-block;
+
+.container2 {
+    display:flex;
+    flex-direction: row;
+    align-content: left;
+    justify-content: left;
+    filter: grayscale(100%);
+    width: 300px;
+    height: 600px;
+    padding: 20px;
 }
 
-.left {
-    padding-left: .5em;
-    margin-top: 0px;
-    margin-left: 2em;
-    display: inline-block;
-    float: center;
-
-}
-
-.right {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-margin-left: 2em;}
-
-div.gallery {
-  border: 0px solid #ccc;
-  filter: grayscale(100%);
-}
-
-div.gallery:hover {
-  border: 0px solid #777;
+.container2:hover {
   filter: contrast(115%);
   filter: brightness(120%)
 }
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.responsive { 
-  margin-top: 5%;
-  padding: 20px;
-  width: 50%;
-  float: left;
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 50%;
-    margin: 6px 0;
-  }
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
-}
-
-.clearfix:after {
-  content: "";
-  display: inline-grid;
-  clear: both;
-}
