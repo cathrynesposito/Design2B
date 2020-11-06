@@ -4,7 +4,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="index.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;0,900;1,300;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
 
 <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="sketch.js"></script>
@@ -22,9 +23,8 @@
 </style>
 <body>    
 <div class="navbar">
-  <h1>Catie Esposito  </h1>  
+  <h1>Catie Esposito</h1>  
   
-  <a href="manifesto/manifesto.html">Manifesto</a>
   <div class="dropdown">
     <button class="dropbtn">Portfolio 
       <i class="fa fa-caret-down"></i>
@@ -36,57 +36,21 @@
     </div>
   </div> 
      <div class="dropdown">
-    <button class="dropbtn">Class Projects 
+    <button class="dropbtn">Digital Design Projects 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="poem/poem.html">Poem</a>
-        <a href="processing/processing.html">Processing</a>
-        <a href="css-painting/painting.html">CSS Painting</a>
       <a href="clock/clock.html">Clock</a>
-     <a href="clock/infograph.html">Infographic</a>
         <a href="gendrawings/generative.html">Generative Drawing</a>
-        <a href="datavisual/datavisual.html">Star Data Visual</a>
       <a href="Game/game.html">Drawing Game</a>
      <a href="Game/game2.html">Drawing Game #2</a>
     </div>
   </div> 
     <a href="q+a/questions.html">About</a>
 </div>
-    <script>
-    let xoff = 0.0;
-let yoff = 0.0;
-let zoff = 0.0;
 
+<iframe src="https://editor.p5js.org/espositoc/embed/nLIC7uqQ7"></iframe>
 
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(0);
-}
-
-function draw() {
-
-  xoff = xoff + 0.1;
-  yoff = yoff + 0.1;
-  zoff = zoff + 0.1;
-  let m = noise(xoff) * width;
-  let n = noise(yoff) * height;
-  let o = noise(zoff) * height/width;
-  for (let i = 0; i < width; i = i + 40) {
-    for (let j = 0; j < height; j = j + 40) {
-       for (let k = 0; k < height/width; k = k + 40) {
-      stroke(255, random(255), random(100), 200);
-      translate(width/10, height / 8);
- translate(p5.Vector.fromAngle(millis() / 1000, 90));
-      line(sin(i-m)+20, cos(j-n)+25, sin(k-o), cos(k-o)+20);
-line(sin(0), cos(0), tan(k-o), cos(k-o)+20);
-    noFill();
-    stroke(255);
-    rect(sin(height/4), cos(width/20), 2,2)
-
-    }
-  }
-}
-}</script>
 </body>
 </html>
