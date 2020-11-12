@@ -1,13 +1,11 @@
 body{
-    margin: 0;
+    margin-top: 0px;
     font-family: "Nunito", sans-serif;
     font-weight: 100;
     letter-spacing:1px;
     font-size: 12pt;
     color:white;
-    background-image: url(images/filmstrip.jpg);
-    background-size: contain;
-    background-repeat: repeat-y;
+    background-color:black;
 } 
 
 .header {
@@ -126,12 +124,14 @@ li a:hover {
   margin: auto;
 }
 
+
 .container {
     display:flex;
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    margin:20px 200px;
+    margin:0px 50px;
+
 }
 
 img:hover {
@@ -139,9 +139,24 @@ img:hover {
 }
 
 img {
-    padding:10px 10px;
-    width: 25%;
+    padding: 0px 18px;
+    padding-left: 0PX;
+    width: 20%;
     height: auto;
     filter: invert(100%)
 }
+
+.film {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width:600%;
+    position: inherit;
+    z-index: -2;
+    margin-left: -20px;
+    padding: 10PX;
+    filter: invert();
+}
   
+
