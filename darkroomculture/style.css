@@ -4,7 +4,7 @@ body{
     font-weight: 100;
     letter-spacing:1px;
     font-size: 12pt;
-    color:white;
+    color:sienna;
 } 
 
 .back {
@@ -20,34 +20,68 @@ body{
     width: 100%;
     height: 62px;
     font-style: italic;
+    position: static;
+    z-index: 1;
 }
 
 h2{
 text-align: left;
+background-color: black;
+opacity: 50%;
+padding: 20px;
+margin: 80px 40px 0px 40px;
+font-weight: 100;
+color: sienna;
+position: static;
+z-index: -3;
+}
+
+p5{
+ font-weight: 700;
+ font-style: italic;
+ color:coral;
+ font-variant-caps: all-petite-caps;
+}
+
+h3{
+color:white;
+text-align: left;
 letter-spacing:1px;
 font-size: 24pt;
-margin: 40px 50px 0px 50px;
+margin: 40px 30px 0px 50px;
 padding-top:100px;
 font-variant-caps: all-petite-caps;
 }
 
-h3 {
-margin: 0px 50px 100px 50px;
+h3:hover {
+color:white;}
+
+h4 {
+margin: 0px 50px 10px 50px;
 font-weight: 100;
- font-variant-caps: all-petite-caps;
+font-size: 18pt;
+font-variant-caps: all-petite-caps;
 }
+
+h4:hover {
+color:white;}
+
 
 .textbox{
     display:flex;
     flex-direction: column;
     align-content: center;
     justify-content: center; 
-    padding: 10px;
+    padding: 20px 40px;
     width: 100%;
     height:auto;
     position: inherit; 
+    background-color: black;
+    opacity: 50%;
 }
 
+.textbox:hover {
+   opacity: 100%;}
 
 p {
     font-size: 18pt;
@@ -69,27 +103,30 @@ p3 {
     font-size: 15pt;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
-    padding-top:20px;
+    padding:20px;
     font-variant-caps: all-petite-caps;
-    
 }
 
+p3:hover{
+   color:white;
+   background-color: sienna;
+   margin:20px;
+   padding:4px;}
+
 a:visited {
+    padding:20px;
     color:white;
     text-decoration: none;
     text-decoration-color: white;
 }
 
-a {
+a, a:hover{
+    padding:20px;
     color: white;
     text-decoration: none; 
 }
 
-p3:hover{
-    color:white;
-    background-color: black;
-    padding: 10px;
-}
+
 .shape {
     width: 100%;
     padding-top: 10px;
@@ -105,6 +142,7 @@ p3:hover{
 
 .container:hover {
     filter: contrast(100%);
+    color: white;
 }
 
 .container {
@@ -114,7 +152,7 @@ p3:hover{
     justify-content: center;
     margin: 30px;
     padding: 20px 100px;
-    filter: brightness(70%);
+    filter: brightness(50%);
 }
 
 
@@ -175,7 +213,9 @@ ul {
 .dropdown-content {
   display: none;
   position: absolute;
+  z-index: 0;
   background-color: #f9f9f9;
+
 }
 
 .dropdown-content a {
@@ -187,7 +227,7 @@ ul {
   text-align: center;
   font-size: 12px;
   font-family: 'Nunito', sans-serif;
- font-weight: 600;
+  font-weight: 600;
 }
 
 .dropdown-content a:hover {
@@ -197,6 +237,8 @@ ul {
 
 .dropdown:hover .dropdown-content {
   display: block;
+   position: absolute;
+  z-index: 1;
 }
 
 li {
@@ -223,19 +265,4 @@ li a:hover {
 }
  
 
-.container2 {
-    display:flex;
-    flex-direction: row;
-    align-content: left;
-    justify-content: left;
-    filter: grayscale(100%);
-    width: 300px;
-    height: 600px;
-    padding: 20px;
-}
-
-.container2:hover {
-  filter: contrast(115%);
-  filter: brightness(120%)
-}
 
