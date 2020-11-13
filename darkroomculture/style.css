@@ -36,7 +36,7 @@ position: static;
 z-index: -3;
 }
 
-p5{
+p5:hover{
  font-weight: 700;
  font-style: italic;
  color:coral;
@@ -77,11 +77,8 @@ color:white;}
     height:auto;
     position: inherit; 
     background-color: black;
-    opacity: 50%;
+    color: white;
 }
-
-.textbox:hover {
-   opacity: 100%;}
 
 p {
     font-size: 18pt;
