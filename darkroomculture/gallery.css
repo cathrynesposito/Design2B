@@ -134,9 +134,10 @@ li a:hover {
 
 }
 
-img:hover {
+.bw:hover {
     filter:contrast(110%)
 }
+
 
 img {
     padding: 0px 18px;
